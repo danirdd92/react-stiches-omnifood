@@ -6,7 +6,7 @@ import MealCard from './MealCard';
 const Meals = () => {
 	return (
 		<MealSection>
-			<Container css={{ textAlign: 'center' }}>
+			<Container textAligment='center'>
 				<SubHeading>Meals</SubHeading>
 
 				<Heading type='secondary'> Omnifood AI chooses from 5,000+ recipes</Heading>
@@ -25,7 +25,15 @@ const Meals = () => {
 							dietsData.map((diet) => {
 								return (
 									<ListItem key={diet.text}>
-										{<diet.icon />}
+										{
+											<diet.icon
+												style={{
+													width: '3rem',
+													height: '3rem',
+													color: '#e67e22',
+												}}
+											/>
+										}
 										<span>{diet.text}</span>
 									</ListItem>
 								);

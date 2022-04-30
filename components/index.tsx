@@ -4,6 +4,13 @@ export const Container = styled('div', {
 	maxWidth: '$1200',
 	padding: '0 $32',
 	margin: '0 auto',
+	variants: {
+		textAligment: {
+			center: {
+				textAlign: 'center',
+			},
+		},
+	},
 });
 
 export const Grid = styled('div', {

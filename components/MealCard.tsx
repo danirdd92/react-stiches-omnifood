@@ -2,7 +2,6 @@
 
 import { styled } from '../stitches.config';
 import { MealCardItem } from '../types';
-import { iconDictionary } from '../devData';
 
 const MealCard = ({ attributes, image, tags, title }: MealCardItem) => {
 	return (
@@ -29,7 +28,15 @@ const MealCard = ({ attributes, image, tags, title }: MealCardItem) => {
 							return (
 								<Attribute key={index}>
 									<>
-										{<attribute.icon height='2.4rem' width='2.4rem' color='#e67e22' />}
+										{
+											<attribute.icon
+												style={{
+													width: '2.4rem',
+													height: '2.4rem',
+													color: '#e67e22',
+												}}
+											/>
+										}
 										<span>{attribute.text}</span>
 									</>
 								</Attribute>
