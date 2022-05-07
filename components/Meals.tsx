@@ -1,5 +1,5 @@
 import { styled } from '../stitches.config';
-import { Container, Grid, Heading, List, ListItem, SubHeading } from '.';
+import { Container, Grid, Heading, Link, List, ListItem, SubHeading } from '.';
 import { dietsData, mealCardsData } from '../devData';
 import MealCard from './MealCard';
 
@@ -9,7 +9,7 @@ const Meals = () => {
 			<Container textAligment='center'>
 				<SubHeading>Meals</SubHeading>
 
-				<Heading type='secondary'> Omnifood AI chooses from 5,000+ recipes</Heading>
+				<Heading type='secondary'>Omnifood AI chooses from 5,000+ recipes</Heading>
 			</Container>
 
 			<MealsContainer columns={3}>
@@ -41,6 +41,10 @@ const Meals = () => {
 					</List>
 				</Diets>
 			</MealsContainer>
+
+			<AllRecepies>
+				<Link>See all recipes &rarr;</Link>
+			</AllRecepies>
 		</MealSection>
 	);
 };
@@ -61,3 +65,8 @@ const MealsContainer = styled(Grid, {
 });
 
 const Diets = styled('div', {});
+
+const AllRecepies = styled(Container, {
+	textAlign: 'center',
+	fontSize: '$18',
+});

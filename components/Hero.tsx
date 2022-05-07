@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { Button, Heading } from '.';
 import { styled } from '../stitches.config';
 
@@ -10,8 +9,7 @@ const Hero = () => {
 					<Heading type='primary'>A healthy meal delivered to your door, every single day</Heading>
 
 					<Description>
-						The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional
-						needs.
+						The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.
 					</Description>
 
 					<Button

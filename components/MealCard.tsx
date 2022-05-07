@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
-
 import { styled } from '../stitches.config';
 import { MealCardItem } from '../types';
 
@@ -117,10 +115,4 @@ const Attribute = styled('li', {
 	display: 'flex',
 	alignItems: 'center',
 	gap: '$16',
-});
-
-const MealIcon = styled('svg', {
-	height: '$24',
-	width: '$24',
-	color: '$primary',
 });

@@ -1,9 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
-import React from 'react';
 import { Container } from '.';
 import { styled } from '../stitches.config';
 
-const Featured = () => {
+const FeaturedIn = () => {
 	return (
 		<FeaturedSection>
 			<Container>
@@ -21,7 +19,7 @@ const Featured = () => {
 	);
 };
 
-export default Featured;
+export default FeaturedIn;
 
 const FeaturedSection = styled('section', {
 	padding: '$48 0 $32',

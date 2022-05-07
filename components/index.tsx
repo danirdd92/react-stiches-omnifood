@@ -1,4 +1,5 @@
 import { styled } from '../stitches.config';
+import { IoInfiniteOutline, IoNutritionOutline, IoLeafOutline, IoPauseOutline, IoLogoFacebook, IoLogoTwitter, IoLogoInstagram } from 'react-icons/io5';
 
 export const Container = styled('div', {
 	maxWidth: '$1200',
@@ -40,6 +41,14 @@ export const Grid = styled('div', {
 				justifyContent: 'center',
 			},
 		},
+		type: {
+			footer: {
+				gridTemplateColumns: '1.5fr 1.5fr 1fr 1fr 1fr',
+				maxWidth: '$1200',
+				padding: '0 $32',
+				margin: '0 auto',
+			},
+		},
 	},
 });
 
@@ -66,7 +75,7 @@ export const ListIcon = styled('svg', {
 });
 
 export const Link = styled('a', {
-	'&:link, &:visited': {
+	'&, &:link, &:visited': {
 		display: 'inline-block',
 		color: '$primary',
 		textDecoration: 'none',
@@ -79,18 +88,16 @@ export const Link = styled('a', {
 	},
 });
 
-export const ButtonBase = styled('button', {
-	'&:link, &:visited': {
+export const Button = styled('button', {
+	'&, &:link, &:visited': {
 		display: 'inline-block',
 		textDecoration: 'none',
 		fontSize: '$20',
 		fontWeight: '$semiBold',
 		padding: '$16 $32',
 		borderRadius: '$default',
+		transition: 'all 0.3s',
 	},
-});
-
-export const Button = styled(ButtonBase, {
 	variants: {
 		variant: {
 			filled: {
@@ -117,6 +124,7 @@ export const Button = styled(ButtonBase, {
 				color: '$tint300',
 				alignSelf: 'end',
 				padding: '1.2rem',
+				border: 'none',
 
 				'&:hover': {
 					backgroundColor: '#fff',
@@ -161,3 +169,32 @@ export const SubHeading = styled('span', {
 	marginBottom: '$16',
 	letterSpacing: '$apart',
 });
+
+const iconStyle = { color: '#e67e22', height: '3.2rem', width: '3.2rem' };
+
+export const InfiniteIcon = () => {
+	return <IoInfiniteOutline style={iconStyle} />;
+};
+export const NutritionIcon = () => {
+	return <IoNutritionOutline style={iconStyle} />;
+};
+export const LeafIcon = () => {
+	return <IoLeafOutline style={iconStyle} />;
+};
+export const PauseIcon = () => {
+	return <IoPauseOutline style={iconStyle} />;
+};
+
+const socialIconStyle = { height: '2.4rem', width: '2.4rem' };
+
+export const FacebookIcon = () => {
+	return <IoLogoFacebook style={socialIconStyle} />;
+};
+
+export const TwitterIcon = () => {
+	return <IoLogoTwitter style={socialIconStyle} />;
+};
+
+export const InstagramIcon = () => {
+	return <IoLogoInstagram style={socialIconStyle} />;
+};

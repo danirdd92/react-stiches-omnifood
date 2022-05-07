@@ -1,6 +1,6 @@
 import { IconType } from 'react-icons';
 
-interface Image {
+export interface Image {
 	src: string;
 	alt: string;
 }
@@ -14,4 +14,16 @@ export interface MealCardItem {
 	image: Image;
 	tags: string[];
 	attributes: Attribute[];
+}
+
+export interface TestimonialData {
+	author: string;
+	quote: string;
+	image: Image;
+}
+
+export interface Feature {
+	title: string;
+	text: string;
+	icon: string;
 }

@@ -50,7 +50,8 @@ const NavList = styled('ul', {
 	gap: '$48',
 });
 
-const _NavItem = styled('a', {
+const StyledNavItem = styled('a', {
+	transition: 'all 0.3s',
 	'&:link, &:visited': {
 		display: 'inline-block',
 		textDecoration: 'none',
@@ -81,9 +82,9 @@ const _NavItem = styled('a', {
 const NavItem = ({ text, href, type }: { text: string; href: string; type?: 'cta' }) => {
 	return (
 		<li>
-			<_NavItem type={type} href={href}>
+			<StyledNavItem type={type} href={href}>
 				{text}
-			</_NavItem>
+			</StyledNavItem>
 		</li>
 	);
 };

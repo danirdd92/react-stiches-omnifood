@@ -22,6 +22,7 @@ export const { styled, css, theme, getCssText } = createStitches({
 			2: '0.2rem',
 			4: '0.4rem',
 			8: '0.8rem',
+			12: '1.2rem',
 			16: '1.6rem',
 			24: '2.4rem',
 			32: '3.2rem',
@@ -70,11 +71,10 @@ export const { styled, css, theme, getCssText } = createStitches({
 			30: '3.0rem',
 			32: '3.2rem',
 			48: '4.8rem',
+			64: '6.4rem',
 			96: '9.6rem',
 			1200: '120rem',
 		},
-		borderWidths: {},
-		borderStyles: {},
 		radii: {
 			default: '9px',
 			medium: '11px',
@@ -84,7 +84,6 @@ export const { styled, css, theme, getCssText } = createStitches({
 		shadows: {
 			outline: '0 0 0 0.8rem rgba(230, 125, 34, 0.5)',
 		},
-		transitions: {},
 	},
 	media: {},
 });
@@ -113,5 +112,14 @@ export const globalStyles = globalCss({
 	'*:focus': {
 		outline: 'none',
 		boxShadow: '0 0 0 0.6rem rgba(230, 125, 34, 0.5)',
+	},
+	'.feature-icon': {
+		color: '#e67e22',
+		width: '3.2rem',
+		height: '3.2rem',
+		backgroundColor: '#fdf2e9',
+		marginBottom: '3.2rem',
+		padding: '1.6rem',
+		borderRadius: '50%',
 	},
 });

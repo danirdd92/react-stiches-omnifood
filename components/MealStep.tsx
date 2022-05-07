@@ -23,7 +23,7 @@ const MealStep = ({ stepNumber, title, description, image }: MealStepProps) => {
 			</StepTextBox>
 
 			<StepImageBox>
-				<StepImage src={image.src} alt={image.alt} />
+				<StepImage {...image} />
 			</StepImageBox>
 		</>
 	);
